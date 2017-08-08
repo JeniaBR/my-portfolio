@@ -4,13 +4,12 @@
   align-items: center;
   background: #18BC9C;
   color: whitesmoke;
-  height: 89vh;
 }
 
 .img {
   margin-top: 25px;
-  width: 25em;
-  height: 25em;
+  max-width: 55%;
+  height: auto;
   border-radius: 50%;
 }
 
@@ -20,9 +19,13 @@ h2 {
   margin: 0;
 }
 
-.intro-wrapper{
+p {
+  font-size: 1.6em;
+  text-align: center;
+}
+
+.wrapper{
   width: 45%;
-  display: block;
 }
 
 .first {
@@ -37,9 +40,14 @@ h2 {
 }
 
 @media all and (max-width: 769px) {
-  .intro-wrapper {
+  .wrapper {
     width: auto;
     display: flex;
     flex-direction: column;
   }
+
+  p {
+    font-size: 1.3em;
+  }
+  
 }

@@ -55,7 +55,7 @@ class Navbar extends React.Component {
           </div>
         </div>
         <div className={`nav-links ${(this.state.hideMenu && this.state.mobile) ? 'hide' : ''}`}>
-          <a href="#">porfolio</a>
+          <a href="#">portfolio</a>
           <a href="#">about</a>
           <a href="#">contact</a>
         </div>
