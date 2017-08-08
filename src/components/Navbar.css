@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: space-between;
   font-size: 2em;
-  transition: ease all 0.3s;
+  transition: all ease 0.3s;
 }
 
 .mobile-wrapper {
@@ -30,6 +30,10 @@
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
+}
+
+.hamburger-menu {
+  cursor: pointer;
 }
 
 .icon-bar > span:first-child {

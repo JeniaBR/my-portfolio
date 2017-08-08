@@ -2,18 +2,59 @@ import React from 'react';
 import './Navbar.css';
 
 class Navbar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      mobile: false,
+      hideMenu: false
+    }
+  }
+
+  componentDidMount() {
+    if (window.innerWidth < 769) {
+      this.setState({
+        mobile: true,
+        hideMenu: true
+      });
+    }
+    window.addEventListener('resize', this.handleResizeWindow);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResizeWindow);
+  }
+
+  handleResizeWindow = () => {
+    if (window.innerWidth < 769) {
+      this.setState({
+        mobile: true
+      });
+    } else {
+      this.setState({
+        mobile: false
+      });
+    }
+  }
+
+  handleHamburgerMenu = () => {
+    const currentHideMenu = this.state.hideMenu;
+    this.setState({
+      hideMenu: !currentHideMenu
+    }); 
+  }
+
   render(){
     return(
-      <nav className="navbar-container">
+      <nav onClick={this.handelResizeWindow} className="navbar-container">
         <div className="mobile-wrapper">
           <div className="my-name">Jenia Brook</div>
-          <div className="hamburger-menu">
+          <div onClick={this.handleHamburgerMenu} className={`hamburger-menu ${this.state.hideMenu ? '' : 'hamburger-animation'}`}>
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
           </div>
         </div>
-        <div className="nav-links">
+        <div className={`nav-links ${(this.state.hideMenu && this.state.mobile) ? 'hide' : ''}`}>
           <a href="#">porfolio</a>
           <a href="#">about</a>
           <a href="#">contact</a>
