@@ -1,8 +1,12 @@
 
 .navbar-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
   display: flex;
   flex-wrap: wrap;
-  padding: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background: #2C3E50;
   color: whitesmoke;
   align-items: center;
@@ -30,6 +34,10 @@
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
+}
+
+.my-name {
+  padding-left: 10px;
 }
 
 .hamburger-menu {
@@ -64,6 +72,7 @@
 .nav-links {
   display: flex;
   flex-wrap: wrap;
+  padding: 10px;
 }
 
 .nav-links > a {
