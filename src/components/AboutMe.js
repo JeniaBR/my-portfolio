@@ -7,7 +7,7 @@ const AboutMe = () => {
     <div className="about-me-container">
       <div className="wrapper">
         <div className="header">
-          <h2>Hi I'm Jenia Brook, a fullstack engineer who loves JavaScript</h2>
+          <h2>Hi I'm Jenia Brook, a fornt end engineer who loves JavaScript</h2>
         </div>
         <img className="img" src={myImage} alt="Me :)"/>
         <p className="paragraph">
