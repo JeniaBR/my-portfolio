@@ -49,9 +49,7 @@ class Navbar extends React.Component {
         <div className="mobile-wrapper">
           <div className="my-name">Jenia Brook</div>
           <div onClick={this.handleHamburgerMenu} className={`hamburger-menu ${this.state.hideMenu ? '' : 'hamburger-animation'}`}>
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
+            <div className="hamburger"></div>
           </div>
         </div>
         <div className={`nav-links ${(this.state.hideMenu && this.state.mobile) ? 'hide' : ''}`}>
