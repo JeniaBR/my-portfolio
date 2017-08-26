@@ -52,10 +52,10 @@ class Navbar extends React.Component {
             <div className="hamburger"></div>
           </div>
         </div>
-        <div className={`nav-links ${(this.state.hideMenu && this.state.mobile) ? 'hide' : ''}`}>
-          <a href="#">portfolio</a>
-          <a href="#">about</a>
-          <a href="#">contact</a>
+        <div className={`nav-links ${(this.state.hideMenu && this.state.mobile) ? 'hide' : 'show'}`}>
+          <div><a href="#">portfolio</a></div>
+          <div><a href="#">about</a></div>
+          <div><a href="#">contact</a></div>
         </div>
       </nav>
     );

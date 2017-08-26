@@ -34,11 +34,12 @@
 .hamburger::before,
 .hamburger::after {
   content: '';
-  display: block;
+  display: none;
   background: whitesmoke;
   height: 3px;
-  width: 1.3em;
+  width: 1.2em;
   border-radius: 3px;
+  transition: all ease-in-out 200ms;
 }
 
 .hamburger::before {
@@ -53,40 +54,55 @@
   transform: rotate(45deg);
 }
 
+.hamburger-animation .hamburger::before {
+  opacity: 0;
+}
+
+.hamburger-animation .hamburger::after {
+  transform: translateY(-2px) rotate(-90deg);
+}
+
 .nav-links {
   display: flex;
   flex-wrap: wrap;
-  padding: 10px;
+  padding-left: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  transition: all ease-in-out 200ms;
 }
 
-.nav-links > a {
+.nav-links > div > a {
   color: whitesmoke;
-  padding: 15px;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 0.8em;
 }
 
-.nav-links > a:link {
+.nav-links > div > a:link {
     text-decoration: none;
     color: whitesmoke;
 }
 
-.nav-links > a:visited {
+.nav-links > div  > a:visited {
     text-decoration: none;
 }
 
-.nav-links > a:hover {
+.nav-links > div > a:hover {
     text-decoration: none;
 }
 
-.nav-links > a:active {
+.nav-links > div  > a:active {
     text-decoration: none;
     color: whitesmoke;
 }
 
 .hide {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.show {
+  max-height: 20em;
 }
 
 @media all and (max-width: 769px) {
@@ -94,12 +110,14 @@
     display: block;
   }
 
-  .icon-bar {
-    display: flex;
-  }
-  
   .nav-links {
-    flex-direction: column;
+    display: block;
+  }
+
+  .hamburger, 
+  .hamburger::before,
+  .hamburger::after {
+    display: block;
   }
 
   .nav-links > a {
