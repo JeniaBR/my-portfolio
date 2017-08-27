@@ -13,6 +13,7 @@
   justify-content: space-between;
   font-size: 2em;
   transition: all ease 0.3s;
+  z-index: 1000;
 }
 
 .mobile-wrapper {
