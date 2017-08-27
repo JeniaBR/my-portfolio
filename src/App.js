@@ -5,12 +5,18 @@ import Portfolio from './components/Portfolio';
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      portfolio: ["cabin", "cake", "circus", "game", "safe", "submarine"]
+    }
+  }
   render() {
     return (
       <div className="App">
        <Navbar/>
        <AboutMe/>
-       <Portfolio/>
+       <Portfolio portfolio={this.state.portfolio}/>
       </div>
     );
   }

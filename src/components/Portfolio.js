@@ -1,4 +1,5 @@
 import React from 'react';
+import PorfolioItem from './PortfolioItem';
 import './Porfolio.css';
 
 class Portfolio extends React.Component {
@@ -7,6 +8,9 @@ class Portfolio extends React.Component {
       <section className="portfolio-container">
         <h2>Portfolio</h2>
         This is My awesome portfolio :) 
+        {this.props.portfolio.map((item)=>(
+          <PorfolioItem portfolioItem={item}/>
+        ))}      
       </section>
     );
   }
