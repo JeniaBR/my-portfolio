@@ -7,7 +7,7 @@ const PortfolioItem = (props) => {
     <div onClick={props.handleModal} className="portfolio-item">
       <img src={pic} className="img-responsive" alt={props.portfolioItem}/>
       <div className="overlay">
-        <i className="fa fa-search-plus fa-5x" aria-hidden="true"></i>
+        <i className="fa fa-white fa-search-plus fa-5x" aria-hidden="true"></i>
       </div>
     </div>
   );

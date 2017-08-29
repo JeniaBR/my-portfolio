@@ -4,6 +4,7 @@ import Intro from './components/Intro';
 import Portfolio from './components/Portfolio';
 import PortfolioModal from './components/PortfolioModal';
 import About from './components/About';
+import Contact from './components/Contact';
 import './App.css';
 
 class App extends Component {
@@ -33,6 +34,7 @@ class App extends Component {
        <Intro/>
        <Portfolio handleModal={this.handleModal} portfolio={this.state.portfolio}/>
        <About/>
+       <Contact/>
        <PortfolioModal handleModal={this.handleModal} showModal={this.state.showModal} />
       </div>
     );

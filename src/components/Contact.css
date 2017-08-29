@@ -1,0 +1,22 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-ways {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.fa-contact {
+  color: black;
+  transition: color ease 0.25s;
+  padding: 25px;
+}
+
+.fa-contact:hover {
+  color: #18BC9C;
+}
