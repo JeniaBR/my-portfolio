@@ -8,10 +8,10 @@ const PortfolioModal = (props) => {
   }
   return(
     <div className="modal-container">
+      <div className="close-btn-container">
+        <i onClick={props.handleModal} className="fa fa-times fa-4x" aria-hidden="true"></i>
+      </div>
       <div className="modal-body">
-        <div onClick={props.handleModal} className="close-btn-container">
-          X
-        </div>
         <h2>Some Title From Props</h2>
         <img src={pic} className="img-responsive" alt="some alt from props"/>
         <p>Lorem ipsum dolor sit amet, id mei liber dicit fabulas. Inimicus molestiae similique pri ne, ei ceteros oportere est, oblique nostrum ne nec. Ea partiendo consequat ius. At est fabulas quaestio.</p>

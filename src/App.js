@@ -5,13 +5,13 @@ import Portfolio from './components/Portfolio';
 import PortfolioModal from './components/PortfolioModal';
 import About from './components/About';
 import Contact from './components/Contact';
+import porfolioData from './make-portfolio';
 import './App.css';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      portfolio: ["cabin", "cake", "circus", "game", "safe", "submarine"],
       showModal: false,
     }
   }
@@ -32,7 +32,7 @@ class App extends Component {
       <div className="App">
        <Navbar/>
        <Intro/>
-       <Portfolio handleModal={this.handleModal} portfolio={this.state.portfolio}/>
+       <Portfolio handleModal={this.handleModal} portfolio={porfolioData}/>
        <About/>
        <Contact/>
        <PortfolioModal handleModal={this.handleModal} showModal={this.state.showModal} />

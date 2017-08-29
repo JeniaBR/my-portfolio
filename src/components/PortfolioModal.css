@@ -15,8 +15,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
 .hide-body-scroll {
   overflow: hidden;
+}
+
+.close-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1em;
+  cursor: pointer;
 }
