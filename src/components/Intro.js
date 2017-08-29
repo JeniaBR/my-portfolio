@@ -1,10 +1,10 @@
 import React from 'react';
-import './AboutMe.css';
+import './Intro.css';
 import myImage from '../img/me.jpg';
 
-const AboutMe = () => {
+const Intro = () => {
   return (
-    <div className="about-me-container">
+    <div className="container">
       <div className="wrapper">
         <div className="header">
           <h2>Hi I'm Jenia Brook, a fornt end engineer who loves JavaScript</h2>
@@ -18,4 +18,4 @@ const AboutMe = () => {
   );
 }
 
-export default AboutMe;
+export default Intro;

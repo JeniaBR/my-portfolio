@@ -1,6 +1,6 @@
 
 
-.about-me-container {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,7 +37,7 @@
 }
 
 @media all and (max-width: 769px) {
-  .about-me-container {
+  .container {
     
     padding-top: 10px;
   }

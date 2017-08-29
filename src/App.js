@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Navbar from './components/Navbar';
-import AboutMe from './components/AboutMe';
+import Intro from './components/Intro';
 import Portfolio from './components/Portfolio';
 import PortfolioModal from './components/PortfolioModal';
+import About from './components/About';
 import './App.css';
 
 class App extends Component {
@@ -29,8 +30,9 @@ class App extends Component {
     return (
       <div className="App">
        <Navbar/>
-       <AboutMe/>
+       <Intro/>
        <Portfolio handleModal={this.handleModal} portfolio={this.state.portfolio}/>
+       <About/>
        <PortfolioModal handleModal={this.handleModal} showModal={this.state.showModal} />
       </div>
     );
