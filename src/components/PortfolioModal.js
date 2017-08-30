@@ -1,26 +1,21 @@
 import React from 'react';
 import './PortfolioModal.css';
-import pic from '../img/portfolio/cabin.png';
 
 const PortfolioModal = (props) => {
-  if (!props.showModal) {
+  const {showModal, handleModal, projectInfo} = props;
+  if (!showModal) {
     return null;
   }
   return(
     <div className="modal-container">
       <div className="close-btn-container">
-        <i onClick={props.handleModal} className="fa fa-times fa-4x" aria-hidden="true"></i>
+        <i onClick={handleModal} className="fa fa-times fa-4x" aria-hidden="true"></i>
       </div>
       <div className="modal-body">
-        <h2>Some Title From Props</h2>
-        <img src={pic} className="img-responsive" alt="some alt from props"/>
-        <p>Lorem ipsum dolor sit amet, id mei liber dicit fabulas. Inimicus molestiae similique pri ne, ei ceteros oportere est, oblique nostrum ne nec. Ea partiendo consequat ius. At est fabulas quaestio.</p>
-        <p>Lorem ipsum dolor sit amet, id mei liber dicit fabulas. Inimicus molestiae similique pri ne, ei ceteros oportere est, oblique nostrum ne nec. Ea partiendo consequat ius. At est fabulas quaestio.</p>
-        <p>Lorem ipsum dolor sit amet, id mei liber dicit fabulas. Inimicus molestiae similique pri ne, ei ceteros oportere est, oblique nostrum ne nec. Ea partiendo consequat ius. At est fabulas quaestio.</p>
-        <p>Lorem ipsum dolor sit amet, id mei liber dicit fabulas. Inimicus molestiae similique pri ne, ei ceteros oportere est, oblique nostrum ne nec. Ea partiendo consequat ius. At est fabulas quaestio.</p>
-        <p>Lorem ipsum dolor sit amet, id mei liber dicit fabulas. Inimicus molestiae similique pri ne, ei ceteros oportere est, oblique nostrum ne nec. Ea partiendo consequat ius. At est fabulas quaestio.</p>
-        <p>Lorem ipsum dolor sit amet, id mei liber dicit fabulas. Inimicus molestiae similique pri ne, ei ceteros oportere est, oblique nostrum ne nec. Ea partiendo consequat ius. At est fabulas quaestio.</p>
-        <div>The technology that is used in this project</div>
+        <h2>{projectInfo.title}</h2>
+        <img src={projectInfo.img} className="img-responsive" alt="some alt from props"/>
+        <p>{projectInfo.description}</p>
+        <div>{projectInfo.technologies}</div>
         <div className="btn-container">
           <button>Live</button>
           <button>Code</button>

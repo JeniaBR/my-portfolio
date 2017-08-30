@@ -7,9 +7,8 @@ class Portfolio extends React.Component {
     return(
       <section className="portfolio-container">
         <h2>Portfolio</h2>
-        This is My awesome portfolio :) 
         {this.props.portfolio.map((item)=>(
-          <PorfolioItem handleModal={this.props.handleModal} portfolioItem={item}/>
+          <PorfolioItem key={item.id} id={item.id} handleModal={this.props.handleModal} portfolioItem={item.img}/>
         ))}      
       </section>
     );

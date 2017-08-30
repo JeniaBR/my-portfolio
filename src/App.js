@@ -13,17 +13,26 @@ class App extends Component {
     super(props);
     this.state = {
       showModal: false,
+      projectInfo: {}
     }
   }
 
-  handleModal = () => {
+  handleModal = (e) => {
+    let portfolioItemById = null;
+    if (e.target.dataset['portfolioId']) {
+      const target = e.target.dataset['portfolioId'];
+      portfolioItemById = porfolioData.find((x) => {
+        return x.id == target
+      });
+    }
     if (!this.state.showModal) {
       document.body.className = 'hide-body-scroll';
     } else {
       document.body.className = '';
     }
     this.setState({
-      showModal: !this.state.showModal
+      showModal: !this.state.showModal,
+      projectInfo: {... portfolioItemById}
     });
   }
 
@@ -35,7 +44,7 @@ class App extends Component {
        <Portfolio handleModal={this.handleModal} portfolio={porfolioData}/>
        <About/>
        <Contact/>
-       <PortfolioModal handleModal={this.handleModal} showModal={this.state.showModal} />
+       <PortfolioModal projectInfo={this.state.projectInfo} handleModal={this.handleModal} showModal={this.state.showModal} />
       </div>
     );
   }

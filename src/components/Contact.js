@@ -7,16 +7,16 @@ const Contact = () => {
       <h2>Contact</h2>
       <p>Here, no contact form, sorry spammers. But wait ! <br/> There is so many ways to get in touch with me !</p>
       <div className="contact-ways">
-        <a target="_blank" href="https://twitter.com/jeniabrook">
+        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/jeniabrook">
           <i className="fa fa-twitter fa-5x fa-contact" aria-hidden="true"></i>
         </a>
-        <a target="_blank" href="https://github.com/JeniaBR">
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/JeniaBR">
           <i className="fa fa-github fa-5x fa-contact" aria-hidden="true"></i>
         </a>
-        <a target="_blank" href="https://www.linkedin.com/in/jenia-brook-6807234b/">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jenia-brook-6807234b/">
           <i className="fa fa-linkedin-square fa-5x fa-contact" aria-hidden="true"></i>
         </a>
-        <a target="_blank" href="https://www.facebook.com/jenia.brook">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/jenia.brook">
           <i className="fa fa-facebook-official fa-5x fa-contact" aria-hidden="true"></i>
         </a>
         <a href="mailto:jeniabrook@gmail.com">
