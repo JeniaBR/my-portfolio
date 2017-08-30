@@ -16,10 +16,16 @@ const PortfolioModal = (props) => {
         <img src={projectInfo.img} className="img-responsive" alt="some alt from props"/>
         <p>{projectInfo.description}</p>
         <div>{projectInfo.technologies}</div>
-        <div className="btn-container">
-          <button>Live</button>
-          <button>Code</button>
-        </div>
+      </div>
+      <div className="btn-container">
+        <a href="#" className="button" role="button">
+          <i className="fa fa-github-alt fa-padding" aria-hidden="true"></i>
+          Code
+        </a>
+        <a href="#" className="button" role="button">
+          <i className="fa fa-play-circle fa-padding" aria-hidden="true"></i>
+          Live Demo
+        </a>
       </div>
     </div>
   );
