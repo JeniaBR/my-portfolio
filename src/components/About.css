@@ -1,0 +1,13 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #18BC9C;
+  padding: 1em;
+  color: whitesmoke;
+}
+
+.about-container > p {
+  line-height: 1.6em;
+  text-align: center;
+}

@@ -20,3 +20,8 @@
 .fa-contact:hover {
   color: #18BC9C;
 }
+
+.contact-container > p {
+  line-height: 1.6em;
+  text-align: center;
+}
