@@ -15,7 +15,12 @@ const PortfolioModal = (props) => {
         <h2>{projectInfo.title}</h2>
         <img src={projectInfo.img} className="img-responsive" alt="some alt from props"/>
         <p>{projectInfo.description}</p>
-        <div>{projectInfo.technologies}</div>
+        <h4>Tech Stack</h4>
+        <div className="tech-container">
+          {projectInfo.technologies.map((techItem) => {
+            return (<i className={`devicon-${techItem} colored tech-tag`}></i>)
+          })}
+        </div>
       </div>
       <div className="btn-container">
         <a href="#" className="button" role="button">

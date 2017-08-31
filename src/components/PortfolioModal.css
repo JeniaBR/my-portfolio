@@ -55,3 +55,14 @@
 .fa-padding {
   padding-right: 6px;
 }
+
+.tech-container {
+  font-size: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tech-tag {
+  padding: 10px;
+}
