@@ -5,7 +5,7 @@ import './Porfolio.css';
 class Portfolio extends React.Component {
   render() {
     return(
-      <section className="portfolio-container">
+      <section id="portfolio" className="portfolio-container">
         <h2>Portfolio</h2>
         {this.props.portfolio.map((item)=>(
           <PorfolioItem key={item.id} id={item.id} handleModal={this.props.handleModal} portfolioItem={item.img}/>

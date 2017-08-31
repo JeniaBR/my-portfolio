@@ -1,4 +1,5 @@
 import React from 'react';
+import scrollToComponent from 'react-scroll-to-component';
 import './Navbar.css';
 
 class Navbar extends React.Component {
@@ -17,6 +18,9 @@ class Navbar extends React.Component {
         hideMenu: true
       });
     }
+    this.portrfolioSection = document.getElementById('portfolio');
+    this.aboutSection = document.getElementById('about');
+    this.contactSection = document.getElementById('contact');
     window.addEventListener('resize', this.handleResizeWindow);
   }
 
@@ -36,6 +40,13 @@ class Navbar extends React.Component {
     }
   }
 
+  handleSmoothScrolling = (ref) => {
+    scrollToComponent(ref, { offset: -50, align: 'top', duration: 1500});
+    this.setState({
+      hideMenu: true
+    });
+  }
+
   handleHamburgerMenu = () => {
     const currentHideMenu = this.state.hideMenu;
     this.setState({
@@ -53,9 +64,9 @@ class Navbar extends React.Component {
           </div>
         </div>
         <div className={`nav-links ${(this.state.hideMenu && this.state.mobile) ? 'hide' : 'show'}`}>
-          <div><a href="#">portfolio</a></div>
-          <div><a href="#">about</a></div>
-          <div><a href="#">contact</a></div>
+          <div><a onClick={() => this.handleSmoothScrolling(this.portrfolioSection)}>portfolio</a></div>
+          <div><a onClick={() => this.handleSmoothScrolling(this.aboutSection)}>about</a></div>
+          <div><a onClick={() => this.handleSmoothScrolling(this.contactSection)}>contact</a></div>
         </div>
       </nav>
     );
