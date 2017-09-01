@@ -23,11 +23,11 @@ const PortfolioModal = (props) => {
         </div>
       </div>
       <div className="btn-container">
-        <a href="#" className="button" role="button">
+        <a href={projectInfo.linkToCode} className="button" role="button">
           <i className="fa fa-github-alt fa-padding" aria-hidden="true"></i>
           Code
         </a>
-        <a href="#" className="button" role="button">
+        <a href={projectInfo.linkToLive} className="button" role="button">
           <i className="fa fa-play-circle fa-padding" aria-hidden="true"></i>
           Live Demo
         </a>
