@@ -45,7 +45,7 @@ const portfolio = [
                   per selected language, Battle page will take you to form, input 2 users from github and see who wins.`,
     technologies: ['react-original', 'webpack-plain', 'javascript-plain', 'html5-plain', 'css3-plain'],
     linkToCode: 'https://github.com/JeniaBR/github-battle',
-    linkToLive: ''
+    linkToLive: 'https://build-kxjvgsbxzl.now.sh/'
   },
   {
     id: 4,
