@@ -16,7 +16,7 @@ const portfolio = [
                   such as user authentication, database storage, Ajax REST API, file upload and image resizing.`,
     technologies: ['nodejs-plain', 'mongodb-plain', 'express-original', 'webpack-plain', 'javascript-plain', 'html5-plain', 'css3-plain'],
     linkToCode: 'https://github.com/JeniaBR/delicious-web-app',
-    linkToLive: ''
+    linkToLive: 'https://dang-thats-delicious-irmgmwjiza.now.sh/'
   },
   {
     id: 1,
@@ -26,7 +26,7 @@ const portfolio = [
                   The app have a menu, an order form, and an inventory management area where authorized users can immediately update product details.`,
     technologies: ['react-original', 'webpack-plain', 'javascript-plain', 'html5-plain', 'css3-plain'],
     linkToCode: 'https://github.com/JeniaBR/catch-of-the-day',
-    linkToLive: ''
+    linkToLive: 'https://build-dglltbctfj.now.sh/'
   },
   {
     id: 2,
@@ -54,7 +54,7 @@ const portfolio = [
     description: `Tic Tac Toe Game, nothing special, an old good game. I've implemented minimax algorithm for the AI, so your best score is tie.`,
     technologies: ['react-original', 'webpack-plain', 'javascript-plain', 'html5-plain', 'css3-plain'],
     linkToCode: 'https://github.com/JeniaBR/tic-tac-toe',
-    linkToLive: ''
+    linkToLive: 'https://build-aumbtzapoi.now.sh/'
   },
   {
     id: 5,
