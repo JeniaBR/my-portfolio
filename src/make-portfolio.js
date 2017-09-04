@@ -73,7 +73,7 @@ const portfolio = [
                   There are also a strict mode for the hardcore.`,
     technologies: ['react-original', 'webpack-plain', 'javascript-plain', 'html5-plain', 'css3-plain'],
     linkToCode: 'https://github.com/JeniaBR/simon-game',
-    linkToLive: ''
+    linkToLive: 'https://build-aqqxvrrvxn.now.sh/'
   }
 ];
 
